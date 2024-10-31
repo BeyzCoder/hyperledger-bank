@@ -10,3 +10,10 @@
     padding: 0;
     font-size: 2rem;
 }
+
+.container-form form input {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    margin: 8px;
+}

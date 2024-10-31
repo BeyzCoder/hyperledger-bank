@@ -2,6 +2,8 @@
 
 The purpose of this project is to show how the hyperledger can be feasible in a banking industry. The reason for this is to make the transaction more secure and cannot be tamper and used for fraudulent act. What I created is a working hyperledger blockchain network with chaincode that operates the transaction and a web application for the end-user to interact.
 
+This project can be set up in AWS Cloud.
+
 ## What I've used in this project:
 
 - `hyperledger/fabric-samples` repository. The reason this is needed is because the `/bin` directory are needed to create the hyperledger blockchain.
@@ -77,7 +79,7 @@ $ sudo apt-get install curl
 
 ## How to run the project:
 
-Download the folder `hyperledger-bank` then go to that folder. Then type this command:
+When you are in the folder `hyperledger-bank` then type this command:
 ```bash
 ./setup.sh
 ```
@@ -95,6 +97,16 @@ react-app_1  | Compiled successfully!
 react-app_1  | webpack compiled successfully
 ```
 
+If an error occured during the process of building the containers for react-app, go-gin, or bank-db. Something like this
+```bash
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: rpc error: code = Unknown desc = error getting credentials - err: exit status 1, out: ``
+ERROR: Service 'react-app' failed to build : Build failed
+```
+
+Just type this command:
+```bash
+./setup.sh restart
+```
 
 Open a browser and type this URL:
 ```
@@ -190,3 +202,9 @@ to show that you and the other account is part of the transaction.
 
 Thats all for the walk through.
 
+On the terminal where you did the `./setup.sh` command just **CTRL+C** to stop running the container then type this command:
+```bash
+./setup.sh cleanup
+```
+
+To clean out the containers.

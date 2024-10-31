@@ -137,12 +137,6 @@ func main() {
 		AllowCredentials: true,
 	}))
 
-	server.GET("/", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{
-			"message": "pong!!",
-		})
-	})
-
 	server.GET("/account/:account_id", func(ctx *gin.Context) {
 		account_id := ctx.Param("account_id")
 		data := readAssetByID(contract, account_id)
