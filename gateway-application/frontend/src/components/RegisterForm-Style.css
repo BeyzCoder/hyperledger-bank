@@ -1,0 +1,12 @@
+.container-form {
+    margin: 100px;
+    padding: 50px;
+    background-color: #EBEBEB;
+    border-radius: 20px;
+    box-shadow: -2px 2px 5px 5px rgba(76, 0, 67, 0.364);
+}
+.container-form h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}

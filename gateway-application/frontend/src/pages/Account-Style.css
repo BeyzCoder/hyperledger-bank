@@ -1,0 +1,141 @@
+.account-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    filter: blur(2px) brightness(70%);
+    border-bottom: 3px solid black;
+}
+
+.display-name {
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 25px;
+    left: 150px;
+    color: rgb(48, 145, 209);
+}
+
+.summary {
+    display: flex;
+    width: min(1700px, 90%);
+}
+.banking-accounts {
+    flex: 2;
+}
+.section-account {
+    margin: 50px
+}
+.section-account h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-bottom: 3px solid black;
+    padding: 5px 0;
+}
+
+.open-account {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    transition: 0.2s ease-in-out;
+}
+.open-account:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.transaction-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.transaction-account span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.account {
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.account:hover {
+    color: rgb(48, 145, 209);
+    text-decoration: underline rgb(48, 145, 209) 3px;
+    text-underline-offset: 7px;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.detail-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-account span {
+    font-size: .8rem;
+    font-weight: 300;
+    opacity: .6;
+}
+
+.apply-account {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.add-account {
+    border: 2px solid rgb(48, 145, 209);
+    border-radius: 50%;
+    padding: 3px 10px;
+    color: rgb(48, 145, 209);
+    font-size: 1.2rem;
+    cursor: default;
+}
+.apply {
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.apply:hover {
+    color: rgb(48, 145, 209);
+    text-decoration: underline rgb(48, 145, 209) 3px;
+    text-underline-offset: 8px;
+}
+
+.banking-actions {
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    height: 500px;
+}
+.banking-actions h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.banking-actions span {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: 0.2s ease-in-out;
+}
+.banking-actions span:hover {
+    color: rgb(48, 145, 209);
+    text-decoration: underline rgb(48, 145, 209) 3px;
+    text-underline-offset: 7px;
+}

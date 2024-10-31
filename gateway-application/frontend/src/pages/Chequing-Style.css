@@ -1,0 +1,45 @@
+.view-cheq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.transactions {
+    width: min(1500px, 90%);
+    background-color: rgb(167, 193, 215);
+    padding: 50px;
+}
+
+.transactions h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.transactions h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.row {
+    border-top: 1px solid black;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.row:hover {
+    background-color: rgba(240, 248, 255, .5);
+}
+
+.hash, .amount {
+    font-size: 1.3rem;
+}
+.time, .activity {
+    font-size: .8rem;
+}

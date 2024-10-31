@@ -1,0 +1,117 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-logo {
+    position: absolute;
+    left: 125px;
+    top: 50px;
+
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    filter: saturate(10%) invert(10%) sepia(90%) saturate(3000%) hue-rotate(270deg) brightness(70%) contrast(70%);
+    cursor: pointer;
+}
+
+.login-container {
+    position: absolute;
+    right: 125px;
+    top: 50px;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.login-container:hover {
+    color: var(--color-purple);
+    text-decoration: underline var(--color-purple) 3px;
+    text-underline-offset: 10px;
+}
+
+.home-page .wrapper {
+    display: flex;
+    width: min(1700px, 90%);
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform 0.5s ease;
+}
+
+.headline {
+    width: 825px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.headline h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.2rem;
+    font-weight: 800;
+    /* color: var(--color-purple); */
+}
+.headline p {
+    margin: 50px 0;
+    padding: 0;
+    font-size: 1.2rem;
+    width: 600px;
+}
+.headline button {
+    font-size: 1.5rem;
+    background: transparent;
+    border: 3px solid var(--color-purple);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 30px;
+    transition: 0.2s ease-in-out;
+
+    font-weight: 700;
+    color: var(--color-purple);
+}
+.headline button:hover {
+    background-color: var(--color-purple);
+    color: white;
+}
+
+.display-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: hue-rotate(270deg) saturate(2); */
+    /* filter: saturate(10%) invert(10%) sepia(90%) saturate(3000%) hue-rotate(270deg) brightness(70%) contrast(70%); */
+}
+
+.display-img img {
+    height: 500px;
+    width: 750px;
+}
+
+.wrapper.slide-out {
+    transform: translateX(-900px); /* Adjust the value based on how far you want to move the content */
+}
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -850px; /* Initially off-screen */
+    width: 850px;
+    height: 100%;
+    background-color: var(--color-purple);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.5s ease;
+}
+
+.side-panel.open {
+    right: 0;
+}
+
+.close-panel {
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.view-pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.payment-container {
+    min-height: 500px;
+    background-color: rgb(157, 36, 157);
+    padding: 50px;
+    width: min(700px, 90%);
+}
+
+.payment-container h1 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.payment-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.payment-container select {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+}
+.payment-container input {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+}
+.payment-container button {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+}
